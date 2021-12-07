@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smart Voting System</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="email">smartvoting21@gmail.com</string>
+    <string name="voting">21votingsmart@4780</string>
+</resources>

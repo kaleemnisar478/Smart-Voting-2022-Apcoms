@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="51dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/launch_election"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="9dp"
+                app:cardCornerRadius="9dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginStart="11dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Logout"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="9dp"
+                app:cardCornerRadius="9dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="11dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/delete" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Delete Account"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:padding="15dp"
+            android:text="System give maximum flexibility and efficiency in election planning and create ballots easily online. Send out election invitations via email. Observe voter turnout in real-time and engage voters with a few mouse clicks. "/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

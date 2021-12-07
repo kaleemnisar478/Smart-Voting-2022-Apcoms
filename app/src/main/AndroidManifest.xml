@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.smartvotingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartVotingSystem">
+        <activity android:name="com.project.smartvotingsystem.Registration">
+
+        </activity>
+
+        <activity android:name="com.project.smartvotingsystem.forget_password" />
+        <activity android:name="com.project.smartvotingsystem.Voter_Panel"></activity>
+        <activity android:name="com.project.smartvotingsystem.Admin_Election_Launcher" />
+        <activity android:name="com.project.smartvotingsystem.Login">
+
+        </activity>
+        <activity
+            android:name="com.project.smartvotingsystem.SplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.smartvotingsystem.MainActivity" />
+        <activity android:name="com.project.smartvotingsystem.FaceRecognition.FaceMainActivity"></activity>
+        <activity android:name="com.project.smartvotingsystem.FaceRecognition.RecognizerActivityForVoteCast"></activity>
+
+        <activity
+            android:name="com.project.smartvotingsystem.FaceRecognition.RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.project.smartvotingsystem.FaceRecognition.RecognizerActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
